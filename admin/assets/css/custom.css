@@ -1,0 +1,70 @@
+.avatar { width: 30px; height: 30px;  }
+
+#preview {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 16px;
+    min-height: 100px;
+}
+#preview:hover {z-index: 1000;}
+#preview:hover .pr-details {opacity: 1;}
+
+#preview:hover .pr-details {opacity: 1;}
+#preview .pr-details {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    font-size: 13px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 2em 1em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 150%;
+}
+#preview .pr-details .pr-size {margin-bottom: 1em;font-size: 16px;}
+#preview .pr-details .pr-filename {white-space: nowrap;}
+#preview .pr-details .pr-filename:hover span {
+    border: 1px solid rgba(200, 200, 200, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#preview .pr-details .pr-filename:not(:hover) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#preview .pr-details .pr-filename:not(:hover) span {
+    border: 1px solid transparent;
+}
+#preview .pr-details .pr-filename span, #preview .pr-details .pr-size span {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0 0.4em;
+    border-radius: 3px;
+}
+#preview:hover .pr-image img {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+}
+#preview .pr-image{
+    border-radius: 20px;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: none;
+    z-index: 10;
+    margin-top: 10px;
+    box-shadow: 0 .625rem 1.25rem #001f3f ;
+}
+#preview .pr-image img {width: 120px; height: 120px;}
+
+
+
+

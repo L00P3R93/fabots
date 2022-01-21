@@ -1,0 +1,17 @@
+{
+  "name": "vendor_name/fabots",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "sntaks",
+      "email": "admin@sntaks.me"
+    }
+  ],
+  "require": {
+    "phpoffice/phpspreadsheet": "^1.14",
+    "ext-mysqli": "*",
+    "ext-json": "*"
+  }
+}

@@ -1,0 +1,38 @@
+
+	
+	
+		body > .pageLoadingDialogWrapper {
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background-color: rgba(0,0,0,0.7);
+			z-index: 9999;
+		}
+	
+		body > .pageLoadingDialogWrapper > .pageLoadingDialog {
+			width: 200px;
+			height: 160px;
+			top: 50%;
+			left: 50%;
+			margin: -80px 0 0 -100px;
+			position: fixed;
+			background-color: #fff;
+			border: 1px solid #212124;
+			border-radius: 3px;
+			padding: 10px;
+			text-align: center;
+		}
+	
+		body > .pageLoadingDialogWrapper > .pageLoadingDialog > h1 {
+			font-size: 20px;
+			margin: 0;
+		}
+	
+		.html-mobile-photo-page-view body > .pageLoadingDialogWrapper > .pageLoadingDialog {
+			top: 30% !important;
+			left: 10% !important;
+			width: 80% !important;
+		}
+	
